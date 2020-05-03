@@ -20,4 +20,11 @@
 - When using a Consumer we can consume multiple context in one component
 
 Updating Context Data
+
 # context-hooks-app
+
+- Hooks
+- Special functions that allow us to do additional things inside functional components
+  - useState - use state within functional component
+  - useEffect - run code when a component renders or re-renders
+  - useContext - consume context in a functional component
