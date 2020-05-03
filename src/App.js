@@ -5,6 +5,7 @@ import BookList from "./components/BookList"
 import ThemeContextProvider from "./contexts/ThemeContext"
 import { ThemeToggle } from "./components/ThemeToggle"
 import AuthContextProvider from "./contexts/AuthContext"
+import { BookContextProvider } from "./contexts/BookContext"
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         {/* these components are attached to the props of ThemeContextProvider */}
         <AuthContextProvider>
           <Navbar />
-          <BookList />
+          {/* give BookList access to the BookContextProvider */}
+          <BookContextProvider>
+            <BookList />
+          </BookContextProvider>
           <ThemeToggle />
         </AuthContextProvider>
       </ThemeContextProvider>
