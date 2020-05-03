@@ -1,9 +1,9 @@
 import React from "react"
-import Navbar from "./components/Navbar"
+import { Navbar } from "./components/Navbar"
 import BookList from "./components/BookList"
 // import provider which holds state
 import ThemeContextProvider from "./contexts/ThemeContext"
-import ThemeToggle from "./components/ThemeToggle"
+import { ThemeToggle } from "./components/ThemeToggle"
 import AuthContextProvider from "./contexts/AuthContext"
 
 function App() {
